@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vestige-Dial | Official Store</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" role="banner">
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-controls="sidebar" aria-expanded="false">
+      ☰
+    </button>
+
+    <div class="logo" id="brandLogo">Vestige-Dial</div>
+
+    <div class="header-actions" aria-hidden="false">
+      <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+        🛒 <span id="cartCount" class="cart-count" aria-live="polite">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+  <nav id="sidebar" class="sidebar" aria-hidden="true" aria-labelledby="menuBtn" role="navigation">
+    <button class="close-btn" id="closeSidebar" aria-label="Close menu">×</button>
+    <a href="#" class="sidebar-link">Home</a>
+    <a href="#" class="sidebar-link">Categories</a>
+    <a href="#" class="sidebar-link">My Orders</a>
+    <a href="#" class="sidebar-link">My Account</a>
+    <a href="#" class="sidebar-link">Help & Support</a>
+  </nav>
+
+  <!-- Main content -->
+  <main class="content" role="main">
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Deals & Dropshipping Picks</h1>
+        <p class="subtitle">Curated products, ready to ship worldwide</p>
+      </div>
+    </section>
+
+    <section class="products" id="products" aria-label="Products">
+      <!-- Product cards are injected by script.js -->
+    </section>
+  </main>
+
+  <!-- Bottom navigation -->
+  <nav class="bottom-nav" role="navigation" aria-label="Bottom navigation">
+    <a class="nav-item" href="#" id="navHome" aria-current="page">
+      <i>🏠</i>
+      <span>Home</span>
+    </a>
+    <a class="nav-item" href="#" id="navCart">
+      <i>🛒</i>
+      <span>My Cart</span>
+    </a>
+    <a class="nav-item" href="#" id="navOrders">
+      <i>📦</i>
+      <span>My Orders</span>
+    </a>
+  </nav>
+
+  <!-- Toast area -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
